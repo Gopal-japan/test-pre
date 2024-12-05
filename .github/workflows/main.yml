@@ -14,11 +14,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # Or try '18' or '14' if necessary
 
-
-      - name: Install dependencies
-        run: |
-          npm install --unsafe-perm=true
+      
+        
+          
 
       - name: Run tests
         run: npm test
