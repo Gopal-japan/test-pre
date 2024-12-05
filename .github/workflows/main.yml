@@ -17,9 +17,8 @@ jobs:
       
         
 
-      - name: Install dependencies
-        run: |
-          npm install --unsafe-perm=true
+      
+        
 
       - name: Run tests
         run: npm test
