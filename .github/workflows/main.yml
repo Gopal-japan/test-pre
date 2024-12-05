@@ -1,13 +1,14 @@
 name: CI/CD Pipeline
 
 on:
-  
- 
+  push:
+    branches:
+      - main
 
 
 jobs:
   build:
-    runs-on: windows-latest
+
 
     steps:
       - name: Checkout repository
