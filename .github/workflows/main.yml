@@ -19,9 +19,9 @@ jobs:
         with:
           node-version: '16'  # Or try '18' or '14' if necessary
 
-      
-        
-          
+      - name: Install dependencies
+        run: |
+          npm install --unsafe-perm=true
 
       - name: Run tests
         run: npm test
